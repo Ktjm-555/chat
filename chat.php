@@ -1,5 +1,5 @@
 <?php   
-require('../library.php');
+require('library.php');
 
 $J_file = "chatlog.json"; 
 date_default_timezone_set('Asia/Tokyo'); 
