@@ -90,7 +90,7 @@ button:hover {
 
 /* ヘッダー */
 header {
-    background-color: rgba(255, 253, 237, 1);
+    background-color: #008000;
     display:flex;
     align-items: center;
     height: 100px;
@@ -118,7 +118,7 @@ header {
 
 .main {
     flex: 1;
-    background: linear-gradient(to right, #0295f7, #F8FFAE);
+    background-color: #ffffc8;
     overflow-y: scroll;
 }
 
@@ -217,7 +217,7 @@ body {
 }
 
 .far.fa-paper-plane:hover::before {
-    background: #acfcf1;
+    background: #fadd16;
     transition: all 0.3s;
     color: black;
 }
@@ -355,7 +355,7 @@ body {
 
 .btn {
     color: #1b2538;
-    background: #acfcf1;
+    background: #fadd16;
     padding: 10px 30px;
     margin-right: 20px;
     border-radius: 5px;
@@ -458,7 +458,7 @@ form {
 
 /* フッター */
 footer {
-    background-color: rgba(255, 253, 237, 1);
+    background: linear-gradient(to right, white, #fadd16);
     text-align: center;
     padding: 18px 0;
 }

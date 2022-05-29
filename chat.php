@@ -27,12 +27,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	if($_SESSION['person'] === 'person1'){
 		$chat = [];
 		$chat["person"] = "person1";
-		$chat["imgPath"] = "image/animal_cooking_girl_inu.png";
+		$chat["imgPath"] = "image/image02.png";
 
 	  }elseif( $_SESSION['person'] === 'person2'){
 		$chat = [];
 		$chat["person"] = "person2";
-		$chat["imgPath"] = "image/animal_cooking_girl_neko.png";
+		$chat["imgPath"] = "image/image01.png";
 
 	  }
 	  	$chat["time"] = date("H:i");
@@ -109,14 +109,8 @@ if(isset($_GET['back']) && $_GET['back'] == "TOPページに戻る"){
 	<div class="container"> 
 		<header>
 			<div class="title">
-				Recipen チャット
+				chatchatchat!
 			</div>
-			<nav class="nav">
-			<form action="chat.php" method="GET">
-				<input class="btn back-btn" id="click"  type="submit" name="back" value="TOPページに戻る">
-			</form>
-
-			</nav>
 		</header>
 
 		<div class="main">
@@ -125,11 +119,11 @@ if(isset($_GET['back']) && $_GET['back'] == "TOPページに戻る"){
 				<form method="get" action="chat.php">
 					<div class="form-box">
 						<div class="change-person flex-box">
-							<input type="submit" id="person2" name="person" value="person2"><label for="person2"><img  class="<?php if($_SESSION['person'] === 'person2'){echo "on";}?>" src="image/animal_cooking_girl_neko.png"></label>
+							<input type="submit" id="person2" name="person" value="person2"><label for="person2"><img  class="<?php if($_SESSION['person'] === 'person2'){echo "on";}?>" src="image/image01.png"></label>
 							<div class="text-center">
 								どちらにしますか？
 							</div>
-							<input type="submit" id="person1" name="person" value="person1"><label for="person1"><img class="<?php if($_SESSION['person'] === 'person1'){echo "on";}?>" src="image/animal_cooking_girl_inu.png"></label>
+							<input type="submit" id="person1" name="person" value="person1"><label for="person1"><img class="<?php if($_SESSION['person'] === 'person1'){echo "on";}?>" src="image/image02.png"></label>
 						</div>
 					</div>	
 				</form>
@@ -154,7 +148,7 @@ if(isset($_GET['back']) && $_GET['back'] == "TOPページに戻る"){
 			</div>
 		</div>
 		<footer>
-            2022 @recipenpj
+            2022 @chatpj
         </footer>
 	</div>		
 </body>
